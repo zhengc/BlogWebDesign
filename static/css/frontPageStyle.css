@@ -1,0 +1,17 @@
+.nav-defined {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.footerStyle {
+    padding-top: 4em !important;
+    padding-bottom: 2em !important;
+}
+
+.text-space {
+    letter-spacing: 1px;
+}
+
+.header-text-size {
+    font-size: 2em !important;
+}
