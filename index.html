@@ -13,25 +13,32 @@
 
     <!--The Top UI Element -->
     <nav class="ui inverted attached segment nav-defined">
-        <div class="ui inverted secondary menu">
-            <h2 class="ui orange header item header-text-size">MyBlog</h2>
-            <a href="#" class="item"><i class="home icon"></i>Front Page</a>
-            <a href="#" class="item"><i class="lemon icon"></i>Category</a>
-            <a href="#" class="item"><i class="tag icon"></i>Tag</a>
-            <a href="#" class="item"><i class="male icon"></i>About Me</a>
-            <div class="right item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search Here">
-                    <i class="inverted circular search link icon"></i>
+        <!-- stackable keyword is to stack rows to a single column for mobile devices -->
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui orange header item header-text-size">MyBlog</h2>
+                <a href="#" class="item hidden-on-mobile menu-click"><i class="home icon"></i>Front Page</a>
+                <a href="#" class="item hidden-on-mobile menu-click"><i class="lemon icon"></i>Category</a>
+                <a href="#" class="item hidden-on-mobile menu-click"><i class="tag icon"></i>Tag</a>
+                <a href="#" class="item hidden-on-mobile menu-click"><i class="male icon"></i>About Me</a>
+                <div class="right item hidden-on-mobile">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search Here">
+                        <i class="inverted circular search link icon"></i>
+                    </div>
                 </div>
             </div>
+            <a href="#" class="ui black icon button top-right show-on-mobile" id="mobile_menu">
+                <i class="sidebar icon"></i>
+            </a>
         </div>
+
     </nav>
 
     <!-- The middle content -->
     <div class="content-padding">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
                 <!-- left side of the content page -->
                 <div class="eleven wide column">
                     <div class="ui segments">
@@ -48,7 +55,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -98,7 +105,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -148,7 +155,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -198,7 +205,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -248,7 +255,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -298,7 +305,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -348,7 +355,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -398,7 +405,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -448,7 +455,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -498,7 +505,7 @@
                         </div>
                         <div class="ui secondary segment">
                             <div class="ui padded segment">
-                                <div class="ui grid">
+                                <div class="ui stackable grid">
                                     <div class="eleven wide column">
                                         <h3 class="ui brown header">May the force be with you.</h3>
                                         <p>我也不知道该说什么好，这只是一个placeholder。谢谢大家嗷！用黑色聲音唸著我想你
@@ -675,10 +682,10 @@
                     </div>
 
                     <!-- Contact Me -->
-                    <h3 class="ui horizontal divider green header right-side-content-margin-giant">Contact Me</h3>
-                    <div class="ui centered card" style="width: 12em">
-                        <img src="./static/images/QR_code.jpeg" class="ui rounded image">
-                    </div>
+<!--                    <h3 class="ui horizontal divider green header right-side-content-margin-giant">Best online photo for this week</h3>-->
+<!--                    <div class="ui centered card" style="width: 20em">-->
+<!--                        <img src="https://images.unsplash.com/photo-1630704236714-b9ae325f1aad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2531&q=80" class="ui rounded massive image">-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -688,9 +695,9 @@
     <!-- The bottom element-->
     <footer class="ui inverted vertical segment footerStyle">
         <div class="ui center aligned container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
                 <div class="three wide column">
-                    <img src="./static/images/img1.jpeg" class="ui medium circular image" alt="" style="width: 150px">
+                    <img src="./static/images/img1.jpeg" class="ui centered medium circular image" alt="" style="width: 150px">
                 </div>
                 <div class="three wide column">
                     <h4 class="ui inverted header">The Newest Blog</h4>
@@ -709,18 +716,30 @@
                     </div>
                 </div>
                 <div class="seven wide column">
-                    <h4 class="ui inverted header">The Newest Blog</h4>
+                    <h4 class="ui inverted header">About me</h4>
                     <p>
-                        I don't know what I can say at the moment, so I just abababababa...
+                        I am a senior standing student majoring in Computer Science at University of Washington.
+                        I am passionate about applying new technologies that I learned to build interesting projects.
+                        I like working out, running, and playing video games, especially those on Nintendo Switch.
+                        I traveled a lot in the past during vacations, but since we are still in the pandemic, I could
+                        only visit places nearby.
                     </p>
                 </div>
             </div>
             <div class="ui divider"></div>
-            <p class="text-space">It's fun to stay at the YMCA. You can get yourself clean, you can have a good meal. Haha.</p>
+            <p class="text-space">Copyright 2021 Zheng Chen</p>
         </div>
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<!-- when in the mobile style and the user click the menu, the function below will en/disable
+the css style "hidden-on-mobile" back and forth.-->
+<script>
+    $("#mobile_menu").click(function () {
+        $(".menu-click").toggleClass("hidden-on-mobile");
+    });
+</script>
 </body>
 </html>

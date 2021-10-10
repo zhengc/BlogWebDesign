@@ -36,3 +36,23 @@
 .inline-block {
     display: inline-block !important;
 }
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.show-on-mobile {
+    display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+    .hidden-on-mobile {
+        display: none !important;
+    }
+
+    .show-on-mobile {
+        display: inline-block !important;
+    }
+}
