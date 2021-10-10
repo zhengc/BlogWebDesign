@@ -39,12 +39,13 @@
     <!-- The middle content -->
     <div class="content-padding blog-width-small">
         <div class="ui container">
+            <!-- the top segment -->
             <div class="ui top attached segment">
                 <!--author, date, view count-->
                 <div class="ui middle aligned two column grid">
                     <div class="left aligned column">
                         <div class="item">
-                            <img src="../static/images/avatar.JPG" class="ui avatar image">
+                            <img src="../static/images/avatar.JPG" class="ui avatar image" alt="avatar">
                             <div class="ui content inline-block">Zheng Chen</div>
                         </div>
                     </div>
@@ -61,10 +62,15 @@
                 </div>
 
             </div>
+            <!-- the image section -->
             <div class="ui attached segment">
                 <!--image-->
                 <img src="https://images.unsplash.com/photo-1540023452151-ea62c0950641?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2072&q=80" class="ui rounded fluid image" alt="">
+                <div class="ui right aligned container">
+                    <div class="ui pointing label">Image by Art Chen</div>
+                </div>
             </div>
+            <!-- the content section -->
             <div class="ui attached content-padding segment">
                 <!--content-->
                 <div class="ui left aligned basic segment">
@@ -122,11 +128,104 @@
                 </div>
 
             </div>
-            <div class="ui attached olive message">
-                blog info
-            </div>
+            <!-- the comment section -->
             <div class="ui bottom attached segment">
-                comment section
+                <!-- comment content -->
+                <div class="ui teal segment">
+                    <div class="ui threaded comments">
+                        <h3 class="ui dividing header">Comments</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.JPG">
+                            </a>
+                            <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                    <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.JPG">
+                            </a>
+                            <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="../static/images/avatar.JPG">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jenny Hess</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now</span>
+                                        </div>
+                                        <div class="text">
+                                            Elliot you are always so right :)
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/avatar.JPG">
+                            </a>
+                            <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                    <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                    Dude, this is awesome. Thanks so much
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui form">
+                    <div class="field">
+                        <textarea name="comment-content" placeholder="It is always good to be nice."></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field mobile-input">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="name">
+                            </div>
+                        </div>
+                        <div class="field mobile-input">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal button mobile-input"><i class="ui edit icon"></i>Comment</div>
+                </div>
             </div>
         </div>
     </div>
