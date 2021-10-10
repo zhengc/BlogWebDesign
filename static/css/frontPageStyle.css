@@ -7,6 +7,11 @@ body {
     padding-bottom: 0.2em !important;
 }
 
+.nav-shadow {
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
 .footerStyle {
     padding-top: 4em !important;
     padding-bottom: 2em !important;
@@ -18,6 +23,10 @@ body {
 
 .header-text-size {
     font-size: 2em !important;
+}
+
+.margin-small {
+    margin-top: 0.5em !important;
 }
 
 .right-side-content-margin-normal {
