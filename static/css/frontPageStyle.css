@@ -1,3 +1,7 @@
+body {
+    background: url("../images/white-waves.png");
+}
+
 .nav-defined {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -56,3 +60,17 @@
         display: inline-block !important;
     }
 }
+
+/* opacity */
+.opacity-v1 {
+    opacity: 0.8 !important;
+}
+
+.opacity-v2 {
+    opacity: 0.6 !important;
+}
+
+.opacity-v3 {
+    opacity: 0.4 !important;
+}
+
