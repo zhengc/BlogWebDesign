@@ -67,9 +67,11 @@
                         <input type="text" placeholder="Title" name="title">
                     </div>
                 </div>
+
                 <div class="field">
-                    <textarea placeholder="Blog Content" name="content"></textarea>
+                    <textarea placeholder="Blog Content" name="content" id="content-editor" class="ck-editor__editable"></textarea>
                 </div>
+
                 <div class="two fields">
                     <!-- Category -->
                     <div class="field">
@@ -183,7 +185,9 @@ the css style "hidden-on-mobile" back and forth.-->
     });
 
     $('.ui.dropdown').dropdown();
+</script>
 
+<script>
     $('.ui.form').form({
         fields : {
             title : {
@@ -217,6 +221,15 @@ the css style "hidden-on-mobile" back and forth.-->
             }
         }
     });
+</script>
+
+<!-- This is outer resource file, make sure you download the library -->
+<script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor.create(document.querySelector('#content-editor'))
+        .catch(error => {
+        console.error(error);
+    })
 </script>
 </body>
 </html>

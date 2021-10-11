@@ -115,5 +115,10 @@ body {
     padding-right: 4em;
 }
 
+/* external editor */
+.ck-editor__editable {
+    min-height: 400px;
+}
+
 
 
