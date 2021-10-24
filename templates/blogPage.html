@@ -8,7 +8,11 @@
     <title>Blog Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <!-- custom defined css file -->
-    <link rel="stylesheet" href="static/css/frontPageStyle.css">
+    <link rel="stylesheet" href="../static/css/frontPageStyle.css">
+    <!-- imported external css file for blog page animation. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- tocbot (table of content) css file import -->
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css"/>
 </head>
 <body>
 
@@ -37,7 +41,7 @@
     </nav>
 
     <!-- The middle content -->
-    <div class="content-padding blog-width-small">
+    <div class="content-padding blog-width-small animate__animated animate__zoomIn">
         <div class="ui container">
             <!-- the top segment -->
             <div class="ui top attached segment">
@@ -70,6 +74,7 @@
                     <div class="ui pointing label">Image by Art Chen</div>
                 </div>
             </div>
+
             <!-- the content section -->
             <div class="ui attached content-padding segment">
                 <!--content-->
@@ -78,13 +83,16 @@
                 </div>
 
                 <h2 class="ui center aligned header">Thoughts about Allegory of the cave</h2>
-                <div id="blog1" class="blog-content-padding-left-right content-padding">
-                    <h4>SOCRATES: ...would not the one who had been dragged like this feel, in the process, pain and rage?
+                <div id="blog1" class="blog-content-padding-left-right content-padding js-toc-content">
+                    <h4 id="query1">SOCRATES: ...would not the one who had been dragged like this feel, in the process, pain and rage?
                         And when he got into the sunlight, wouldn't his eyes be filled with the glare, and wouldn't he thus be unable
                         to see any of the things that are now revealed to him as the unhidden?
                     </h4>
-                    <h4>
+                    <h4 id="query2">
                         GLAUCON: He would not be able to do that at all, at least not right away.
+                    </h4>
+                    <h4 id="intro">
+                        Introduction:
                     </h4>
                     <p>
                         In this passage, Plato revealed the reaction of the freed prisoner to the sunlight through a conversation between Socrates and Glaucon,
@@ -129,7 +137,7 @@
 
             </div>
             <!-- the comment section -->
-            <div class="ui bottom attached segment">
+            <div id="comment-section" class="ui bottom attached segment">
                 <!-- comment content -->
                 <div class="ui teal segment">
                     <div class="ui threaded comments">
@@ -230,12 +238,18 @@
         </div>
     </div>
 
+    <!-- fixed position tools -->
+    <div class="ui vertical icon buttons fixed-buttons">
+        <a href="#comment-section" class="ui teal button">Comment</a>
+        <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
+    </div>
+
     <!-- The bottom element-->
     <footer class="ui inverted vertical segment footerStyle">
         <div class="ui center aligned container">
             <div class="ui stackable grid">
                 <div class="three wide column">
-                    <img src="./static/images/img1.jpeg" class="ui centered medium circular image" alt="" style="width: 150px">
+                    <img src="../static/images/img1.jpeg" class="ui centered medium circular image" alt="" style="width: 150px">
                 </div>
                 <div class="three wide column">
                     <h4 class="ui inverted header">The Newest Blog</h4>
@@ -269,9 +283,9 @@
         </div>
     </footer>
 
+<!-- imported js files -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
 <!-- when in the mobile style and the user click the menu, the function below will en/disable
 the css style "hidden-on-mobile" back and forth.-->
 <script>
@@ -284,7 +298,6 @@ the css style "hidden-on-mobile" back and forth.-->
         on : 'click',
         position: 'top center'
     });
-
 </script>
 </body>
 </html>

@@ -120,5 +120,14 @@ body {
     min-height: 400px;
 }
 
+/* fixed position tools */
+.fixed-buttons {
+    position: fixed !important;
+    /* the bigger the value of z, the upper the layer it is on */
+    z-index: 5 !important;
+    bottom: 10px !important;
+    right: 10px !important;
+}
+
 
 
